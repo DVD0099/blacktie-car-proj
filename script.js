@@ -18,18 +18,10 @@ document.querySelectorAll('.reveal').forEach(element => observer.observe(element
 const dateField = document.querySelector('#date');
 dateField.min = new Date().toISOString().split('T')[0];
 
-document.querySelector('#trackForm').addEventListener('submit', event => {
-  event.preventDefault();
-  const code = document.querySelector('#rideCode').value.trim();
-  document.querySelector('#trackStatus').textContent = code
-    ? 'Demo mode: connect this field to the live tracking provider before launch.'
-    : 'Enter the reservation code from your confirmation message.';
-});
-
 document.querySelector('#bookingForm').addEventListener('submit', event => {
   event.preventDefault();
   const form = event.currentTarget;
   if (!form.checkValidity()) { form.reportValidity(); return; }
-  document.querySelector('#bookingStatus').textContent = 'Thanks — your demo request is ready. A booking and payment provider can be connected here for launch.';
+  document.querySelector('#bookingStatus').textContent = 'Thank you. Antonio will follow up personally to confirm availability and pricing.';
   form.querySelector('button[type="submit"]').textContent = 'Request received ✓';
 });

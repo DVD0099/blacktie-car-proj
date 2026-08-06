@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 124" role="img" aria-labelledby="title desc">
+  <title id="title">Black Tie Luxury Transportation</title>
+  <desc id="desc">Gold Black Tie wordmark with BT monogram and bow tie</desc>
+  <g fill="#c6a15b">
+    <text x="2" y="64" font-family="Georgia, 'Times New Roman', serif" font-size="70" letter-spacing="-7">BT</text>
+    <path d="M22 73 4 63v28l18-10 8 8V65zm18 0 18-10v28L40 81l-8 8V65z"/>
+    <rect x="27" y="70" width="9" height="14" rx="2"/>
+    <path d="M82 18h1v88h-1z" opacity=".65"/>
+    <text x="103" y="55" font-family="Georgia, 'Times New Roman', serif" font-size="38" letter-spacing="8">BLACK TIE</text>
+    <text x="106" y="82" font-family="Arial, Helvetica, sans-serif" font-size="12" letter-spacing="6">LUXURY TRANSPORTATION</text>
+  </g>
+</svg>

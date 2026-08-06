@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 108" role="img" aria-labelledby="title">
+  <title id="title">Black Tie monogram</title>
+  <g fill="#c6a15b">
+    <text x="12" y="59" font-family="Georgia, 'Times New Roman', serif" font-size="66" letter-spacing="-7">BT</text>
+    <path d="M40 71 11 56v38l29-15 10 11V60zm20 0 29-15v38L60 79 50 90V60z"/>
+    <rect x="44" y="67" width="12" height="17" rx="2"/>
+  </g>
+</svg>
