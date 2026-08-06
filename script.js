@@ -22,6 +22,18 @@ document.querySelector('#bookingForm').addEventListener('submit', event => {
   event.preventDefault();
   const form = event.currentTarget;
   if (!form.checkValidity()) { form.reportValidity(); return; }
-  document.querySelector('#bookingStatus').textContent = 'Thank you. Antonio will follow up personally to confirm availability and pricing.';
-  form.querySelector('button[type="submit"]').textContent = 'Request received ✓';
+  const fields = Object.fromEntries(new FormData(form).entries());
+  const subject = encodeURIComponent(`Ride request from ${fields.name}`);
+  const body = encodeURIComponent([
+    `Name: ${fields.name}`,
+    `Phone: ${fields.phone}`,
+    `Email: ${fields.email}`,
+    `Service: ${fields.service}`,
+    `Pickup: ${fields.pickup}`,
+    `Destination: ${fields.destination}`,
+    `Date: ${fields.date}`,
+    `Pickup time: ${fields.time}`
+  ].join('\n'));
+  document.querySelector('#bookingStatus').textContent = 'Opening your email app with the request ready to send…';
+  window.location.href = `mailto:1BlackTieLuxury@gmail.com?subject=${subject}&body=${body}`;
 });
