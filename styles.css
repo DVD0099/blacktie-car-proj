@@ -31,5 +31,5 @@
 .hero-image{object-position:center center}
 .about-image-wrap img{object-position:34% center}
 .experience-image img{object-position:center center}
-@media(min-width:641px){.hero-image{left:auto;right:0;width:64%}.hero-overlay{background:linear-gradient(90deg,#060809 0%,#060809 34%,rgba(6,8,9,.9) 45%,rgba(6,8,9,.25) 72%),linear-gradient(0deg,rgba(4,4,4,.7),transparent 45%)}}
-@media(max-width:640px){.hero-image{object-position:100% center}.about-image-wrap img{object-position:31% center}.experience-image img{object-position:48% center}}
+@media(min-width:641px){.hero-image{left:0;right:auto;width:100%;object-position:center}.hero-overlay{background:linear-gradient(90deg,rgba(6,8,9,.96) 0%,rgba(6,8,9,.78) 35%,rgba(6,8,9,.16) 72%),linear-gradient(0deg,rgba(4,4,4,.7),transparent 45%)}}
+@media(max-width:640px){.hero-image{object-position:center}.about-image-wrap img{object-position:31% center}.experience-image img{object-position:48% center}}
