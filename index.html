@@ -86,8 +86,10 @@
     </section>
 
     <section class="booking section-pad" id="book">
-      <div class="booking-copy reveal"><p class="eyebrow">Reserve your ride</p><h2>Tell me where<br><em>you’re headed.</em></h2><p>Share a few trip details and Antonio will follow up personally with availability and a confirmed quote. Your email app will open with the request ready to send.</p><p class="booking-contact">Prefer to talk? <a href="tel:+12155955389">215-595-5389</a></p></div>
-      <form class="booking-form reveal" id="bookingForm">
+      <div class="booking-copy reveal"><p class="eyebrow">Reserve your ride</p><h2>Tell me where<br><em>you’re headed.</em></h2><p>Share a few trip details and Antonio will receive your request by email, then follow up personally with availability and a confirmed quote.</p><p class="booking-contact">Prefer to talk? <a href="tel:+12155955389">215-595-5389</a></p></div>
+      <form class="booking-form reveal" id="bookingForm" action="https://formspree.io/f/xrpgorra" method="POST" accept-charset="UTF-8">
+        <input type="hidden" name="_subject" value="New ride request — Black Tie Luxury">
+        <input class="form-honeypot" type="text" name="_gotcha" tabindex="-1" autocomplete="off" aria-hidden="true">
         <div class="field"><label for="name">Your name</label><input id="name" name="name" required placeholder="Full name"></div>
         <div class="field"><label for="phone">Phone</label><input id="phone" name="phone" type="tel" required placeholder="Your mobile number"></div>
         <div class="field full"><label for="email">Email</label><input id="email" name="email" type="email" required placeholder="you@example.com"></div>
